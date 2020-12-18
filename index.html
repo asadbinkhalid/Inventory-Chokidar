@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mystyle.css">
   </head>
   <body>
 		
@@ -70,24 +71,66 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
-            </button>
+            </button> -->
             <h1 class="m-0">NHMP Inventory Management System</h1>
           </div>
         </nav>
+        <div>
+          <button type="button" class="add-btn">Add New Item</button>
+          <h3 class="page-title">Inventory</h2>
+        </div>
+        <div>
 
-        <h3 class="mb-4 ml-4">Inventory Items</h2>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-      
+        </div>
       <!-- </div> -->
    
 <div class="container">
   <div class="row">
-    <div class="table-responsive">
-      
+    <div class="table table-bordered table-hover">
+      <table class="table">
+        <thead class="text-uppercase md-">
+          <tr>
+            <th>Name</th>
+            <th>Available Qty.</th>
+            <th>Type</th>
+            <th class="th-actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Uniform</td>
+            <td>1000</td>
+            <td>Consumable</td>
+            <td>
+              <button type="button" class="btn btn-outline-warning">Edit</button>      
+              <button type="button" class="btn btn-outline-danger">Delete</button>        
+            </td>
+            
+          </tr>
+          <tr>
+            <td>AC Units</td>
+            <td>26</td>
+            <td>Durable</td>
+            <td>
+              <button type="button" class="btn btn-outline-warning">Edit</button>      
+              <button type="button" class="btn btn-outline-danger">Delete</button>        
+            </td>
+          </tr>
+          <tr>
+            <td>Mobile Units</td>
+            <td>50</td>
+            <td>Durable</td>
+            <td>
+              <button type="button" class="btn btn-outline-warning">Edit</button>      
+              <button type="button" class="btn btn-outline-danger">Delete</button>        
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
 
 
     </div>
