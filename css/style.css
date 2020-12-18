@@ -477,7 +477,7 @@ pre {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap; */
   margin-right: -15px;
   margin-left: -15px; }
 
@@ -1333,7 +1333,6 @@ pre {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
   color: #212529; }
   .table th,
   .table td {
@@ -2070,7 +2069,7 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary {
+.outlineprimary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
@@ -8286,3 +8285,5 @@ a[data-toggle="collapse"] {
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); }
+
+
