@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Dashboard - NHMP</title>
+  	<title>Dead Stock - NHMP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,7 +18,7 @@
 				<div class="p-4 pt-5">
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.jpg);"></a>
 	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
+	          <li>
 	            <a href="index.html">Inventory</a>
 	            <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
@@ -49,7 +49,7 @@
                 </li>
               </ul> -->
 	          </li>
-	          <li>
+	          <li class="active">
               <a href="deadstockItems.html">Dead Stock</a>
             </li>
             <li>
@@ -82,8 +82,8 @@
           </div>
         </nav>
         <div>
-          <a href="additem.html"><button type="button" class="add-btn">Add New Item</button></a>
-          <h3 class="page-title">Inventory</h2>
+          <a href="addDeadstock.html"><button type="button" class="add-btn">Add New Item</button></a>
+          <h3 class="page-title">Dead Stock Register</h2>
         </div>
         <div>
 
@@ -96,40 +96,77 @@
       <table class="table">
         <thead class="text-uppercase md-">
           <tr>
-            <th>Name</th>
-            <th>Available Qty.</th>
-            <th>Type</th>
-            <th class="th-actions">Actions</th>
+            <th>Item ID</th>
+            <th style="vertical-align: middle; text-align: center;">Item Name</th>
+            <th>Purchase Price</th>
+            <th>Reserve Price</th>
+            <th>Approving Authority</th>
+            <th>Expiry Date</th>
+            <th>Auction Notice Date</th>
+            <th style="vertical-align: middle; text-align: center;">Ad Date</th>
+            <!-- <th class="th-actions">Actions</th> -->
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>1</td>
             <td>Uniform</td>
-            <td>1000</td>
-            <td>Consumable</td>
-            <td>
-              <a href="editItem.html"><button type="button" class="btn btn-outline-warning">Edit</button></a>    
-              <a><button type="button" class="btn btn-outline-danger">Delete</button></a>      
-            </td>
-            
+            <td>15000</td>
+            <td>2000</td>
+            <td>Inventory Manager</td>
+            <td>19/12/20</td>
+            <td>29/12/20</td>
+            <td>18/12/20</td>
           </tr>
           <tr>
+            <td>2</td>
             <td>AC Units</td>
-            <td>26</td>
-            <td>Durable</td>
-            <td>
-              <button type="button" class="btn btn-outline-warning">Edit</button>      
-              <button type="button" class="btn btn-outline-danger">Delete</button>        
-            </td>
+            <td>35000</td>
+            <td>3000</td>
+            <td>Inventory Manager</td>
+            <td>18/12/20</td>
+            <td>09/12/20</td>
+            <td>08/12/20</td>
           </tr>
           <tr>
+            <td>3</td>
             <td>Mobile Units</td>
-            <td>50</td>
-            <td>Durable</td>
-            <td>
-              <button type="button" class="btn btn-outline-warning">Edit</button>      
-              <button type="button" class="btn btn-outline-danger">Delete</button>        
-            </td>
+            <td>35000</td>
+            <td>3000</td>
+            <td>Inventory Manager</td>
+            <td>18/12/20</td>
+            <td>09/12/20</td>
+            <td>08/12/20</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ammunition Units</td>
+            <td>35000</td>
+            <td>3000</td>
+            <td>Inventory Manager</td>
+            <td>18/12/20</td>
+            <td>09/12/20</td>
+            <td>08/12/20</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Shotgun Units</td>
+            <td>35000</td>
+            <td>3000</td>
+            <td>Inventory Manager</td>
+            <td>18/12/20</td>
+            <td>09/12/20</td>
+            <td>08/12/20</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Handcuff Units</td>
+            <td>35000</td>
+            <td>3000</td>
+            <td>Inventory Manager</td>
+            <td>18/12/20</td>
+            <td>09/12/20</td>
+            <td>08/12/20</td>
           </tr>
         </tbody>
       </table>
