@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Dashboard - NHMP</title>
+  	<title>Repair Stock - NHMP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,7 +18,7 @@
 				<div class="p-4 pt-5">
 		  		<a href="#" class="img logo mb-5" style="background-image: url(images/logo.jpg);"></a>
 	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
+	          <li>
 	            <a href="index.html">Inventory</a>
 	            <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
@@ -35,7 +35,7 @@
 	          <li>
 	              <a href="issue.html">Issue/Return Items</a>
 	          </li>
-	          <li>
+	          <li  class="active">
               <a href="repairstockitems.html">Repair Stock</a>
               <!-- <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
@@ -82,54 +82,98 @@
           </div>
         </nav>
         <div>
-          <a href="additem.html"><button type="button" class="add-btn">Add New Item</button></a>
-          <h3 class="page-title">Inventory</h2>
+          <a href="addRepairstock.html"><button type="button" class="add-btn">Add New Item</button></a>
+          <h3 class="page-title">Repair Stock Register</h2>
         </div>
         <div>
 
         </div>
       <!-- </div> -->
-   
+      <!-- Item ID
+       Item Name
+       Vendor ID
+       Vendor Name
+       Bill #
+       Cost
+       Repair Approval Date and Time
+       Approval Order Number -->
 <div class="container">
   <div class="row">
     <div class="table table-bordered table-hover">
       <table class="table">
         <thead class="text-uppercase md-">
           <tr>
-            <th>Name</th>
-            <th>Available Qty.</th>
-            <th>Type</th>
-            <th class="th-actions">Actions</th>
+            <th>Item ID</th>
+            <th style="vertical-align: middle; text-align: center;">Item Name</th>
+            <th>Vendor ID</th>
+            <th>Vendor Name</th>
+            <th style="vertical-align: middle; text-align: center;">Bill #</th>
+            <th style="vertical-align: middle; text-align: center;">Cost</th>
+            <th>Repair Approval Date and Time</th>
+            <th>Approval Order Number</th>
+            <!-- <th class="th-actions">Actions</th> -->
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>1</td>
             <td>Uniform</td>
-            <td>1000</td>
-            <td>Consumable</td>
-            <td>
-              <a href="editItem.html"><button type="button" class="btn btn-outline-warning">Edit</button></a>    
-              <a><button type="button" class="btn btn-outline-danger">Delete</button></a>      
-            </td>
-            
+            <td>7</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
           </tr>
           <tr>
+            <td>2</td>
             <td>AC Units</td>
-            <td>26</td>
-            <td>Durable</td>
-            <td>
-              <button type="button" class="btn btn-outline-warning">Edit</button>      
-              <button type="button" class="btn btn-outline-danger">Delete</button>        
-            </td>
+            <td>6</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
           </tr>
           <tr>
+            <td>3</td>
             <td>Mobile Units</td>
-            <td>50</td>
-            <td>Durable</td>
-            <td>
-              <button type="button" class="btn btn-outline-warning">Edit</button>      
-              <button type="button" class="btn btn-outline-danger">Delete</button>        
-            </td>
+            <td>90</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ammunition Units</td>
+            <td>77</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Shotgun Units</td>
+            <td>6</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Handcuff Units</td>
+            <td>6</td>
+            <td>John Smith</td>
+            <td>121920-01</td>
+            <td>20000</td>
+            <td>29/12/20</td>
+            <td>12192020-01</td>
           </tr>
         </tbody>
       </table>
