@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/styles.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/mystyle.css">
         <title>Login - NHMP</title>
     </head>
 
@@ -12,17 +14,18 @@
         <!-- Main Content -->
         <div class="container-fluid">
             <div class="row main-content bg-success text-center">
-                <div class="col-md-4 text-center company__info">
+                <div class="text-center company__info">
                     <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
                     <h4 class="company_title"><img src = "./images/logo.jpg" ></h4>
                 </div>
-                <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+                <div class="login_form ">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row-title">
                             <h2>Log In</h2>
+                            <!-- <h4>Inventory Manager</h4> -->
                         </div>
                         <div class="row">
-                            <form action="index.html" class="form-group">
+                            <form action="index.html" style="margin-top: 4em;">
                                 <div class="row">
                                     <input type="text" name="username" id="username" class="form__input" placeholder="Username">
                                 </div>
@@ -30,11 +33,11 @@
                                     <!-- <span class="fa fa-lock"></span> -->
                                     <input type="password" name="password" id="password" class="form__input" placeholder="Password">
                                 </div>
-                                <div class="row">
+                                <div class="row" style="margin-top: 1em;">
                                     <input type="checkbox" name="remember_me" id="remember_me" class="">
-                                    <label for="remember_me">Remember Me</label>
+                                    <label for="remember_me" style="font-family: 'Poppins', Arial, sans-serif;">Remember Me</label>
                                 </div>
-                                <div class="row">
+                                <div class="row" style="text-align: center;">
                                     <input type="button" onClick="location.href='index.html'" value="Log In" class="btn">
                                 </div>
                             </form>
