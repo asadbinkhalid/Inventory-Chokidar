@@ -30,3 +30,10 @@
 .btn-outline-danger {
   padding: revert;
 }
+
+.container-login {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-self: center;
+}
