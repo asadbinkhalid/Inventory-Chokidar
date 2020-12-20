@@ -23,6 +23,10 @@
   width: 13%;
 }
 
+.th-actions-perm {
+  width: 15%;
+}
+
 .btn-outline-warning {
   padding: revert;
 }
@@ -31,9 +35,21 @@
   padding: revert;
 }
 
+.btn-success {
+  padding: revert;
+}
+.btn-danger {
+  padding: revert;
+}
+
 .container-login {
   width: 50%;
   padding-right: 15px;
   padding-left: 15px;
   align-self: center;
+}
+
+.form-inline {
+  margin-left: 12rem !important;
+  margin-bottom: 0.5rem !important;
 }
