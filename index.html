@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
+		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mystyle.css">
@@ -33,7 +33,21 @@
 	            </ul> -->
 	          </li>
 	          <li>
-	              <a href="issue.html">Issue/Return Items</a>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Issue/Return Items</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                  <a href="issue.html">Issue Item</a>
+                </li>
+                <li>
+                  <a href="returnItem.html">Return Item</a>
+                </li>
+                <li>
+                  <a href="rcregister.html">RC Book</a>
+                </li>
+                <li>
+                  <a href="inventoryregister.html">Inventory Register</a>
+              </li>
+              </ul>
 	          </li>
 	          <li>
               <a href="repairstockitems.html">Repair Stock</a>
@@ -81,9 +95,15 @@
             <h1 class="m-0">NHMP Inventory Management System</h1>
           </div>
         </nav>
-        <div>
-          <a href="additem.html"><button type="button" class="add-btn">Add New Item</button></a>
-          <h3 class="page-title">Inventory</h2>
+        <div style="display: inline-block;">
+          <div style="display:inline-flex;">
+            <h3 class="page-title" style="text-align: center;">Inventory</h2>
+          </div>
+          <a style="float: right;" href="additem.html"><button type="button" class="add-btn">Add New Item</button></a>
+          <form class="form-inline" style="float: right; text-align: right; margin-bottom: 10px;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Item Name" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> 
         </div>
         <div>
 
