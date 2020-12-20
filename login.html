@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/styles.css">
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="css/mystyle.css">
         <title>Login - NHMP</title>
     </head>
@@ -38,7 +38,8 @@
                                     <label for="remember_me" style="font-family: 'Poppins', Arial, sans-serif;">Remember Me</label>
                                 </div>
                                 <div class="row" style="text-align: center;">
-                                    <input type="button" onClick="location.href='index.html'" value="Log In" class="btn">
+                                    <input type="button" onclick="myFunction()" value="Log In" class="btn">
+                                    <!-- onClick="location.href='index.html'" -->
                                 </div>
                             </form>
                         </div>
@@ -48,3 +49,14 @@
         </div>
     </body>
 </html>
+<script>
+    function myFunction() {
+        console.log("index")
+        if(document.getElementById("username").value == "admin"){
+            window.location = "file:///C:/Projects/SE-Project/index.html";
+            console.log("index")
+        }else{
+            window.location = "file:///C:/Projects/SE-Project/requestAccept.html";
+        }
+    }
+</script>
