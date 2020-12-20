@@ -22,7 +22,6 @@
                     <div class="container-fluid">
                         <div class="row-title">
                             <h2>Log In</h2>
-                            <!-- <h4>Inventory Manager</h4> -->
                         </div>
                         <div class="row">
                             <form action="index.html" style="margin-top: 4em;">
@@ -30,7 +29,6 @@
                                     <input type="text" name="username" id="username" class="form__input" placeholder="Username">
                                 </div>
                                 <div class="row">
-                                    <!-- <span class="fa fa-lock"></span> -->
                                     <input type="password" name="password" id="password" class="form__input" placeholder="Password">
                                 </div>
                                 <div class="row" style="margin-top: 1em;">
@@ -39,7 +37,6 @@
                                 </div>
                                 <div class="row" style="text-align: center;">
                                     <input type="button" onclick="myFunction()" value="Log In" class="btn">
-                                    <!-- onClick="location.href='index.html'" -->
                                 </div>
                             </form>
                         </div>
@@ -53,10 +50,10 @@
     function myFunction() {
         console.log("index")
         if(document.getElementById("username").value == "admin"){
-            window.location = "file:///C:/Projects/SE-Project/index.html";
+            window.location.href = "index.html";
             console.log("index")
         }else{
-            window.location = "file:///C:/Projects/SE-Project/requestAccept.html";
+            window.location.href = "requestAccept.html";
         }
     }
 </script>
