@@ -1,0 +1,40 @@
+<%- include ("./partials/header") %>
+        <div>
+          <!-- <a href="addRepairstock.html"><button type="button" class="add-btn">Add New Item</button></a> -->
+          <h3 class="page-title">Inventory Register</h2>
+        <!-- <div style="display: inline-block">
+            <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Receiver Name" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> 
+        </div> -->
+        </div>
+        <div>
+        </div>
+<div class="container">
+  <div class="row">
+    <div class="table table-bordered table-hover">
+      <table class="table">
+        <thead class="text-uppercase md-">
+          <tr>
+            <th>RC Number</th>
+            <th>Remaining Item Quantity</th>
+            <th>Receiver's Name</th>
+            <th>Receiver's Signatures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% inventoryItems.forEach(function(item){ %>
+          <tr>
+            <td><%= item.rcnumber %></td>
+            <td><%= item.quantityRemaining %></td>
+            <td><%= item.receiverName %></td>
+            <td><%= item.receiverSign %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
+<%- include ("./partials/footer") %>
