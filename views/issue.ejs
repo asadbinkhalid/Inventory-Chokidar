@@ -1,0 +1,84 @@
+<%- include ("./partials/header") %>
+<div>
+          <!-- <button type="button" class="add-btn">Add New Item</button> -->
+          <h3 class="page-title">Issue items from Inventory</h2>
+        </div>
+        <div>
+        </div>
+<div class="container">
+  <!-- <div class="row"> action="/issue" method="POST"-->
+    <form action="/issue" method="POST">
+        <div class="form-group row">
+            <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputprice" class="col-sm-3 col-form-label">Item Name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputprice" name="item[name]" placeholder="Item Name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputquantity" class="col-sm-3 col-form-label">Quantity</label>
+            <div class="col-sm-6">
+                <input type="number" min="1" class="form-control" id="inputquantity" name="item[quantity]" placeholder="Quantity" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputvendorname" class="col-sm-3 col-form-label">Issued to Branch Name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputquantity" name="item[branchName]" placeholder="Issued to Branch Name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+          <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputvendorname" class="col-sm-3 col-form-label">Receiver’s Name</label>
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="inputquantity" name="item[receiverName]" placeholder="Receiver’s Name" required>
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="staticInvoice" style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" class="col-sm-3 col-form-label">Date and Time</label>
+            <div class="col-sm-3">
+              <input type="date" class="form-control" name="item[date]" style="font-size: medium;" required>
+          </div>
+          <div class="col-sm-3">
+            <input type="time" class="form-control" name="item[time]" style="font-size: medium;" required>
+        </div>
+        </div>
+        <div class="form-group row">
+          <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputvendorname" class="col-sm-3 col-form-label">Store Keeper's Signatures</label>
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="inputquantity" name="item[storeKeeperSign]" placeholder="Store Keeper’s Signatures" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label style="font-weight: 500; font-size: large; font-family: Roboto; color: black;" for="inputvendorname" class="col-sm-3 col-form-label">Reciever's Signatures</label>
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="inputquantity" name="item[receiverSign]" placeholder="Reciever's Signatures" required>
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0" style="font-weight: 500; font-size: large; font-family: Roboto; color: black;">Item Issue Approval</legend>
+            <div class="col-sm-6" style="margin-left: 100px;">
+              <div class="form-check" style="font-size: medium; color: black;">
+                <input class="form-check-input" type="radio" name="item[radio1]" id="gridRadios2" value="option1">
+                <label class="form-check-label" for="gridRadios2">
+                  Approval Required
+                </label>
+              </div>
+              <div class="form-check" style="font-size: medium; color: black;">
+                <input class="form-check-input" type="radio" name="item[radio2]" id="gridRadios3" value="option2">
+                <label class="form-check-label" for="gridRadios3">
+                  Approval Not Required
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-outline-primary">Issue Item</button>
+        </div>
+      </div>
+    </form>
+    <!-- <script>
+        document.getElementsByTagName('title').innerHTML = "Issue Item";
+    </script> -->
+    <%- include ("./partials/footer") %>

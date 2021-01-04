@@ -1,0 +1,63 @@
+<%- include ("./partials/header") %>
+
+        <div>
+            
+            <h3 class="page-title">RC Book</h2>
+            <!-- <div style="display: inline-block">
+                <form class="form-inline" style="margin-bottom: 10px;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Item Name" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> 
+            </div> -->
+        </div>
+        <div>
+        </div>
+<div class="container">
+  <div class="row">
+    <div class="table table-bordered table-hover">
+      <table class="table">
+        <thead class="text-uppercase md-">
+          <tr>
+            <th>RC Number</th>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Issued to Branch Name</th>
+            <th>Receiver's Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Store Keeper’s Signatures</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% rcItems.forEach(function(item){ %>
+                <tr>
+                    <td><%= item._id %></td>
+                    <td><%= item.itemID %></td>
+                    <td><%= item.name %></td>
+                    <td><%= item.quantity %></td>
+                    <td><%= item.branchName %></td>
+                    <td><%= item.receiverName %></td>
+                    <td><% 
+                        var d = new Date(item.date),
+                        month = '' + (d.getMonth() + 1),
+                        day = '' + d.getDate(),
+                        year = d.getFullYear();
+                
+                        if (month.length < 2) 
+                            month = '0' + month;
+                        if (day.length < 2) 
+                            day = '0' + day;
+                            %>
+                        <%= ([year, month, day].join('-')) %></td>
+                    <td><%= item.time %></td>
+                    <td><%= item.storKeeperSign %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
+
+<%- include ("./partials/footer") %>
