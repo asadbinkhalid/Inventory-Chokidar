@@ -49,15 +49,84 @@ app.use(function(req, res, next){
 //     itemType: "Durable"
 // })
 
-// var newUser = new User({username: 'supervisor'});
-//     User.register(newUser, 'supervisor', function(err, user){
+// var newUser = new User({username: 'admin'});
+//     User.register(newUser, 'admin', function(err, user){
 //         if(err){
 //             // res.redirect("/register");
 //             console.log("Error in registering User")
 //         }
 //     });
+app.get("/createuser", isLoggedIn, function(req, res){
+    res.locals.title = "Create User - NHMP";
+    if(req.user.username == "manager"){
+        res.redirect("/items");
+    }else if(req.user.username == "supervisor"){
+        res.redirect("/supervisor");
+    }
+    res.render("createUser")
+})
 
+app.post("/createuser", isLoggedIn, function(req, res){
+    res.locals.title = "Create User - NHMP";
+    if(req.user.username == "manager"){
+        res.redirect("/items");
+    }else if(req.user.username == "supervisor"){
+        res.redirect("/supervisor");
+    }
+    var newUser = new User({username: req.body.username});
+    User.register(newUser, req.body.password, function(err, user){
+        if(err){
+            req.flash("error",  err.message);
+            res.redirect("/createuser");
+        }else{
+            req.flash("success", "Reistered successfully.");
+            res.redirect("/createuser");
+        }
+    })
+})
 
+app.get("/createitem", isLoggedIn, function(req, res){
+    res.locals.title = "Add Item - NHMP";
+    if(req.user.username == "manager"){
+        res.redirect("/items");
+    }else if(req.user.username == "supervisor"){
+        res.redirect("/supervisor");
+    }
+    res.render("createItem")
+})
+
+app.post("/createitem", isLoggedIn, function(req, res){
+    res.locals.title = "Add Item - NHMP";
+    if(req.user.username == "manager"){
+        res.redirect("/items");
+    }else if(req.user.username == "supervisor"){
+        res.redirect("/supervisor");
+    }
+    console.log(req.body.name)
+    var name = req.body.name;
+    var price = parseInt(req.body.price);
+    var quantity = parseInt(req.body.quantity);
+    var vendorName = req.body.vendorName;
+    var invoiceNo = parseInt(req.body.invoiceNo);
+    var itemType = req.body.itemType;
+    
+    Item.create({
+        name: name,
+        price: price,
+        quantity: quantity,
+        vendorName: vendorName,
+        invoiceNo: invoiceNo,
+        itemType: itemType
+    }, function (err, createdItem) {
+        if(err){
+            req.flash("error", "An Error occured.")
+            res.redirect("/createitem")
+        }else{
+            req.flash("success", "Item added to Inventory Successfully.")
+            res.redirect("/createitem")
+        }
+    })
+})
 
 app.get("/", function(req, res){
     res.redirect("/login")
