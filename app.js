@@ -445,6 +445,6 @@ function isLoggedIn(req, res, next) {
     res.redirect("/login");
 }
 
-app.listen(3000, process.env.IP, function(){
+app.listen(process.env.PORT || 3000, function () {
     console.log("Server Running on Port 3000");
-})
+});
