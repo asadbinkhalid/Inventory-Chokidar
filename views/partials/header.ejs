@@ -32,16 +32,16 @@
               <li>
                 <a href="/inventoryregister">Inventory Register</a>
                 </li>
-                <% } else if(currentUser.username == 'supervisor'){ %>
+                <% } else if(currentUser.username == 'supervisor') { %>
                   <li>
                     <a href="/supervisor">Approve Request</a>
                   </li>
-                  <% } else if(currentUser.username == 'admin'){%>
-                    <li>
-                      <a href="/createitem">Create Item</a>
-                    </li>
+                  <% } else if(currentUser.username == 'admin') { %>
                     <li>
                       <a href="/createuser">Create User</a>
+                    </li>
+                    <li>
+                      <a href="/createitem">Add Item</a>
                     </li>
                     <% } %>
             <li>
