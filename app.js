@@ -14,7 +14,7 @@ var app = express();
 
 // mongoose.connect("mongodb://localhost/nhmp", { useNewUrlParser: true, useUnifiedTopology: true });
 
-mongoose.connect("mongodb+srv://admin:admin33@cluster0.rbe1d.mongodb.net/nhmp?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://admin:admin33@cluster0.rbe1d.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -58,34 +58,34 @@ app.use(function(req, res, next){
 //             console.log("Error in registering User")
 //         }
 //     });
-app.get("/createuser", function(req, res){
-    res.locals.title = "Create User - NHMP";
-    if(req.user.username == "manager"){
-        res.redirect("/items");
-    }else if(req.user.username == "supervisor"){
-        res.redirect("/supervisor");
-    }
-    res.render("createUser")
-})
+// app.get("/createuser", function(req, res){
+//     res.locals.title = "Create User - NHMP";
+    // if(req.user.username == "manager"){
+    //     res.redirect("/items");
+    // }else if(req.user.username == "supervisor"){
+    //     res.redirect("/supervisor");
+    // }
+//     res.render("createUser")
+// })
 
-app.post("/createuser", isLoggedIn, function(req, res){
-    res.locals.title = "Create User - NHMP";
-    if(req.user.username == "manager"){
-        res.redirect("/items");
-    }else if(req.user.username == "supervisor"){
-        res.redirect("/supervisor");
-    }
-    var newUser = new User({username: req.body.username});
-    User.register(newUser, req.body.password, function(err, user){
-        if(err){
-            req.flash("error",  err.message);
-            res.redirect("/createuser");
-        }else{
-            req.flash("success", "Reistered successfully.");
-            res.redirect("/createuser");
-        }
-    })
-})
+// app.post("/createuser", function(req, res){
+    // res.locals.title = "Create User - NHMP";
+    // if(req.user.username == "manager"){
+    //     res.redirect("/items");
+    // }else if(req.user.username == "supervisor"){
+    //     res.redirect("/supervisor");
+    // }
+//     var newUser = new User({username: req.body.username});
+//     User.register(newUser, req.body.password, function(err, user){
+//         if(err){
+//             req.flash("error",  err.message);
+//             res.redirect("/createuser");
+//         }else{
+//             req.flash("success", "Reistered successfully.");
+//             res.redirect("/createuser");
+//         }
+//     })
+// })
 
 app.get("/createitem", isLoggedIn, function(req, res){
     res.locals.title = "Add Item - NHMP";
@@ -432,6 +432,10 @@ app.get("/logout", function(req, res){
     req.flash("success", "Logged out successfully.");
     res.redirect("/login")
 })
+
+app.get('*', function(req, res){
+    res.send('Does not Exist', 404);
+});
 
 function isLoggedIn(req, res, next) {
     if(req.isAuthenticated()){
