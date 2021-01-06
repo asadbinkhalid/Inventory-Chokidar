@@ -58,7 +58,7 @@ app.use(function(req, res, next){
 //             console.log("Error in registering User")
 //         }
 //     });
-app.get("/createuser", isLoggedIn, function(req, res){
+app.get("/createuser", function(req, res){
     res.locals.title = "Create User - NHMP";
     if(req.user.username == "manager"){
         res.redirect("/items");
