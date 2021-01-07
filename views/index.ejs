@@ -1,0 +1,46 @@
+
+    <%- include ("./partials/header") %>
+<div>
+    <div style="display:inline-flex;">
+      <h3 class="page-title" style="text-align: center;">Inventory Items</h2>
+    </div>
+    <!-- <a style="float: right;" href="additem.html"><button type="button" class="add-btn">Add New Item</button></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Item Name" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="table table-bordered table-hover">
+          <table class="table">
+            <thead class="text-uppercase md-">
+              <tr>
+                <th>Item ID</th>
+                <th>Name</th>
+                <th>Purchase Price</th>
+                <th>Available Qty.</th>
+                <th>Type</th>
+                <!-- <th class="th-actions">Actions</th> -->
+              </tr>
+            </thead>
+            <tbody>
+                <% items.forEach(function(item){ %>
+                    <tr>
+                      <td><%= item._id %></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.price %></td>
+                        <td><%= item.quantity %></td>
+                        <td><%= item.itemType %></td>
+                        <!-- <td>
+                        <a href="editItem.html"><button type="button" class="btn btn-outline-warning">Edit</button></a>    
+                        <a><button type="button" class="btn btn-outline-danger">Delete</button></a>      
+                        </td> -->
+                    </tr>
+                <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <%- include ("./partials/footer") %>
