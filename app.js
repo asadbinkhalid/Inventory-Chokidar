@@ -434,7 +434,7 @@ app.get("/logout", function(req, res){
 })
 
 app.get('*', function(req, res){
-    res.send('Does not Exist', 404);
+    res.send('Does not Exist');
 });
 
 function isLoggedIn(req, res, next) {
