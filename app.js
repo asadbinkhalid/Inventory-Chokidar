@@ -14,7 +14,7 @@ var app = express();
 
 // mongoose.connect("mongodb://localhost/nhmp", { useNewUrlParser: true, useUnifiedTopology: true });
 
-mongoose.connect("mongodb+srv://admin:admin33@cluster0.rbe1d.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("", { useNewUrlParser: true, useUnifiedTopology: true });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
