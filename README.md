@@ -55,7 +55,7 @@ Functional decomposition corresponds to the various functional relationships as 
 
 ### 🏠 Homepage Screenshot 
 <p align="center">
-  <img width="600" alt="a" src="https://github.com/asadbinkhalid/Inventory-Chokidar/blob/main/Homepage.jpeg">
+  <img width="700" alt="a" src="https://github.com/asadbinkhalid/Inventory-Chokidar/blob/main/Homepage.jpeg">
 </p>
 
 ### ✨ [Demo](https://radiant-depths-70569.herokuapp.com/)
