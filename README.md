@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to National Highway Motorway Police Inventory Management System 👋</h1>
+<h1 align="center">National Highway & Motorway Police - Inventory Management System 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/asadbinkhalid/SE-Project/graphs/commit-activity" target="_blank">
@@ -11,13 +11,11 @@
 Inventory Chokidar is a Inventory Management System software that will keep track of
 the inventory of National Highway and Motorway Police Department. Web Application
 Development knowledge will be used in developing this project. Moreover, database
-knowledge shall also be required to save and update the entries. A similar type of work is done
-by monday.com and shopventory.com in which they have integrated inventory and sales
-management operations. Inventory Chokidar will focus on making the software able to perform
+knowledge shall also be required to save and update the entries. Inventory Chokidar will focus on making the software able to perform
 all activities by carefully interacting with the user and fulfilling the requirements specified by
 the client.
 
-## Functional Requirements
+## Functionalities
 
 - Keep track of inventory items.
 - Inventory items have to be related to National Highway Motorway Police (NHMP).
@@ -100,18 +98,3 @@ npm run test
 
 * Github: [@ikhawaja-hassan](https://github.com/ikhawaja-hassan)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/asadbinkhalid/SE-Project/issues). You can also take a look at the [contributing guide](https://github.com/asadbinkhalid/SE-Project/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2021 [NHMP](https://github.com/asadbinkhalid).<br />
-This project is [ISC](https://github.com/asadbinkhalid/SE-Project/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
