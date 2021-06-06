@@ -10,8 +10,8 @@
 
 Inventory Chokidar is a Inventory Management System software that will keep track of
 the inventory of National Highway and Motorway Police Department. Web Application
-Development knowledge will be used in developing this project. Moreover, database
-knowledge shall also be required to save and update the entries. Inventory Chokidar will focus on making the software able to perform
+Development knowledge is used in developing this project. Moreover, database
+knowledge is also required to save and update the entries. Inventory Chokidar focuses on making the software able to perform
 all activities by carefully interacting with the user and fulfilling the requirements specified by
 the client.
 
