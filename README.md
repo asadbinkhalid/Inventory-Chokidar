@@ -76,13 +76,10 @@ npm run test
 ```
 
 > ## Authors
-
 > 👤 **Asad Bin Khalid**
 > * Github: [@asadbinkhalid](https://github.com/asadbinkhalid)
-
 > 👤 **Faizan Atif**
 > * Github: [@faizan387](https://github.com/faizan387)
-
 > 👤 **Khawaja Ahmad Hassan**
 > * Github: [@ikhawaja-hassan](https://github.com/ikhawaja-hassan)
 
