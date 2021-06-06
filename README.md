@@ -75,17 +75,14 @@ npm run start
 npm run test
 ```
 
-## Authors
+> ## Authors
 
-👤 **Asad Bin Khalid**
+> 👤 **Asad Bin Khalid**
+> * Github: [@asadbinkhalid](https://github.com/asadbinkhalid)
 
-* Github: [@asadbinkhalid](https://github.com/asadbinkhalid)
+> 👤 **Faizan Atif**
+> * Github: [@faizan387](https://github.com/faizan387)
 
-👤 **Faizan Atif**
-
-* Github: [@faizan387](https://github.com/faizan387)
-
-👤 **Khawaja Ahmad Hassan**
-
-* Github: [@ikhawaja-hassan](https://github.com/ikhawaja-hassan)
+> 👤 **Khawaja Ahmad Hassan**
+> * Github: [@ikhawaja-hassan](https://github.com/ikhawaja-hassan)
 
