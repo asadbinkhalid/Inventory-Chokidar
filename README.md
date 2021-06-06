@@ -53,15 +53,6 @@ Functional decomposition corresponds to the various functional relationships as 
   <img width="430" alt="a" src="https://user-images.githubusercontent.com/54681019/120927645-018c6080-c6fb-11eb-894e-77d607b5171f.PNG">
 </p>
 
-## System Architecture Diagram
-
-Hybrid architecture style is used here which includes repository and client-server architecture styles. Web Browser and SMS Generator API are the two clients that can request and get response from Application server, which on backend deals with business logic layer. SMS Generator API will only receive input and does not need to send requests to
-the server.
-
-<p align="center">
-  <img width="401" alt="a" src="https://user-images.githubusercontent.com/54681019/120927686-297bc400-c6fb-11eb-8a9f-a555bb0036fd.PNG">
-</p>
-
 ### 🏠 [Homepage](https://github.com/asadbinkhalid/Inventory-Chokidar)
 
 ### ✨ [Demo](https://radiant-depths-70569.herokuapp.com/)
